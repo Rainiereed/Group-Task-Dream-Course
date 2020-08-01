@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover{
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section h1 {
+    font-size: 4rem;
+}
+
+section p {
+    font-size: 1.5rem;
+}
+
+#home {
+    background-image: url("gifhome4.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1000px 1000px; 
+    border-radius: 2000px;
+    height: 700px;
+    width: 700px;
+    position: relative;
+    transform: translate(50%, 0);
+}
+
+/* #home img {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+} */
+
+#overview h1{
+    color: black;
+    font-size: 100px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 200px;
+    right: 0px;
+    
+
+}
+
+#overview p {
+    color:black;
+    width: 500px;
+    position: relative;
+    bottom: 200px;
+    right: 0px;
+    
+}
+
+#overview h2 {
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* #course1 {
+    position: relative;
+    right: 400px;
+    top: 100px;
+    
+}
+
+#course2 {
+    position: relative;
+    left: 400px;
+    top: 60px;
+    
+}
+
+#course1dep {
+    font-size: 15px;
+    position: relative;
+    right: 400px;
+    top: 100px;
+    
+}
+
+#course2dep {
+    font-size: 15px;
+    position: relative;
+    left: 400px;
+    top: 50px; }*/
+
+
+section#overview {
+    background-image: url("overviewbw.jpeg");
+    height: 160vh;
+    position: relative;
+    /* background-size: 1900px 1100px;
+    background-position: left; */
+    /* background-size: cover; */
+    
+    
+    
+    
+    
+}
+
+section#modules {
+    border-top: black 6px solid;
+    background-image: url("codingbg2.jpeg"); 
+    background-repeat: no-repeat;
+    /* background-size: contain;
+    background-position: center; */
+    
+    
+    
+    
+}
+
+.module1 {
+    width: 70vh;
+    height: 55vh;
+    background: rgba(10, 9, 9, 0.705);
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 625px;
+    left: 460px;
+    transform: scale(1);
+    transition: transform 0.8s ease;
+    
+    
+}
+
+.module1:hover {
+    transform: scale(1.3);
+    transition: transform 0.8s ease;
+}
+
+section#modulesone {
+   background-image: url(musicbg.jpeg);
+   position: relative;
+   bottom: 504px;
+   background-size: cover;
+   border-top: black 6px solid;
+}
+
+.modulesonebox {
+    width: 70vh;
+    height: 55vh;
+    background: rgba(10, 9, 9, 0.705);
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 1100px;
+    left: 460px;
+    transform: scale(1);
+    transition: transform 0.8s ease;
+}
+
+.modulesonebox:hover {
+    transform: scale(1.3);
+    transition: transform 0.8s ease;
+}
+
+section#modulestwo {
+    background-image: url("boxingbg.jpeg");
+    position: relative;
+    bottom: 1000px; 
+    
+}
+
+.modulestwobox {
+    width: 70vh;
+    height: 55vh;
+    background: rgba(10, 9, 9, 0.705);
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 1600px;
+    left: 460px;
+    transform: scale(1);
+    transition: transform 0.8s ease;
+}
+
+.modulestwobox:hover {
+    transform: scale(1.3);
+    transition: transform 0.8s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+    /* background: #333; */
+    
+    width: 350px;
+    height: 350px;
+    transition-property: background;
+    transition-duration: 1s;
+    animation: scaledown .2s linear;
+    animation-fill-mode: forwards;
+    border-radius: 50%; 
+    position: relative;
+    top: 500px;
+    left: 250px;
+    text-align: center;
+    color: black; 
+    padding: 0;
+    margin: 0;
+    /* background-image: url("gifhome13.gif");
+    background-position: center;
+    filter: grayscale(100%); */
+    
+    
+    
+    
+ 
+}
+
+.box:hover{
+    /* background: #fff;  */
+    background-image: url("gifhome13.gif");
+    background-position: center;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    animation: scale 0.2s linear;
+    animation-fill-mode: forwards;
+    color: black;
+    width: 350px;
+    height: 350px;
+    /* transition: transform .8s ease;
+    transform: scale(1.2) */
+    
+    
+}
+
+@keyframes scaledown{
+    0%{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100%{
+        -webkit-transform: scale (1);
+        transform: scale(1);
+    }
+
+}
+
+@keyframes scale{
+    0‰{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100%{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.boxone {
+    /* background: #333; */
+    width: 350px;
+    height: 350px;
+    transition-property: background;
+    transition-duration: 1s;
+    animation: scaledown .2s linear;
+    animation-fill-mode: forwards;
+    border-radius: 50%; 
+    position: relative;
+    top: 150px;
+    left: 850px;
+    color: black;
+    text-align: center;
+
+}
+
+.boxone:hover{
+    background-image: url("gifhome13.gif");
+    background-position: center;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    animation: scale 0.2s linear;
+    animation-fill-mode: forwards;
+    color: black;
+    width: 350px;
+    height: 350px;
+}
+
+
+
+/* @keyframes scaledown{
+    0%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100%{
+        -webkit-transform: scale (1);
+        transform: scale(1);
+    }
+
+}
+
+@keyframes scale{
+    0‰{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+} */
+
+.boxtwo {
+    /* background: #333; */
+    width: 250px;
+    height: 250px;
+    transition-property: background;
+    transition-duration: 1s;
+    animation: scaledown .2s linear;
+    animation-fill-mode: forwards;
+    border-radius: 50%; 
+    position: relative;
+    top: 100px;
+    left: 570px;
+    text-align: center;
+    color: black;
+
+}
+
+
+
+.boxtwo:hover{
+    background: #fff; 
+    border-radius: 50%;
+    animation: scale 0.2s linear;
+    animation-fill-mode: forwards;
+    color: black;
+    width: 250px;
+    height: 250px;
+}
+
+/* @keyframes scaledown{
+    0%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100%{
+        -webkit-transform: scale (1);
+        transform: scale(1);
+    }
+
+}
+
+@keyframes scale{
+    0‰{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+} */
+
+#boxingicon {
+    max-width: 200px;    
+    width: auto;
+}
+
+#codingicon {
+    max-width: 200px;
+    width: auto;
+}
+
+#musicicon {
+    max-width: 200px;
+    width: auto;
+}
