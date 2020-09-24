@@ -1,184 +1,215 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-    * {
-	margin:40px;
-	padding:0;
-}
-body {
-	overflow:hidden;
-	perspective:2000px;
-	background-color: black;
-}
-ul {
-	position:relative;
-	width:300px;
-	height:300px;
-	margin:80px auto;
-	list-style:none;
-	transform-style:preserve-3d;
-	transform:rotateX(-10deg) rotateY(0deg);
-	animation:flash 12s linear infinite 1.2s;
-}
-ul:hover {
-	animation-play-state:paused;
-}
-ul li {
-	font-size:40px;
-	text-align:center;
-	line-height:300px;
-	color:#fff;
-	width:100%;
-	height:100%;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transition:all 0.2s ease;
-}
 
-a{
-	color:white;
-	text-decoration: none;
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			margin: 40px;
+			padding: 0;
+		}
 
-}
-ul li:hover {
-	width:380px;
-	height:380px;
-	top:40%;
-}
-ul li:nth-child(1) {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px) translateX(-50%) translateY(-50%);
-	background:salmon;
-	animation:flash1 1.3s ease forwards;
-}
-ul li:nth-child(2) {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px) translateX(-50%) translateY(-50%);
-	background:lightslategray;
-	animation:flash2 1.3s ease forwards;
-}
-ul li:nth-child(3) {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-	background:darkseagreen;
-	animation:flash3 1.3s ease forwards;
-}
-ul li:nth-child(4) {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-	background:lightsalmon;
-	animation:flash4 1.3s ease forwards;
-}
-ul li:nth-child(5) {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-	background:lightseagreen;
-	animation:flash5 1.3s ease forwards;
-}
+		body {
+			overflow: hidden;
+			perspective: 2000px;
+			background-color: black;
+		}
 
-@keyframes flash {
-	from {
-	transform:rotateX(-10deg) rotateY(0deg);
-}
-to {
-	transform:rotateX(-10deg) rotateY(360deg);
-}
-}@keyframes flash1 {
-	from {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-}
-to {
-	transform:translateX(-50%) translateY(-50%) rotateY(72deg) translateZ(400px);
-}
-}@keyframes flash2 {
-	from {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-}
-to {
-	transform:translateX(-50%) translateY(-50%) rotateY(144deg) translateZ(400px);
-}
-}@keyframes flash3 {
-	from {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-}
-to {
-	transform:translateX(-50%) translateY(-50%) rotateY(216deg) translateZ(400px);
-}
-}@keyframes flash4 {
-	from {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-}
-to {
-	transform:translateX(-50%) translateY(-50%) rotateY(288deg) translateZ(400px);
-}
-}@keyframes flash5 {
-	from {
-	transform:translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
-}
-to {
-	transform:translateX(-50%) translateY(-50%) rotateY(360deg) translateZ(400px);
-}
+		ul {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 80px auto;
+			list-style: none;
+			transform-style: preserve-3d;
+			transform: rotateX(-10deg) rotateY(0deg);
+			animation: flash 12s linear infinite 1.2s;
+		}
 
-}
+		ul:hover {
+			animation-play-state: paused;
+		}
 
-.masked {
-	display:block;
-	width:600px;
-	height:900px;
-	background-image:-webkit-linear-gradient(left,#3498db,#f47920 10%,#d71345 20%,#f7acbc 30%,#ffd400 40%,#3498db 50%,#f47920 60%,#d71345 70%,#f7acbc 80%,#ffd400 90%,#3498db);
-	color:transparent;
+		ul li {
+			font-size: 40px;
+			text-align: center;
+			line-height: 300px;
+			color: #fff;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: all 0.2s ease;
+		}
 
-    -webkit-text-fill-color:transparent;
-	-webkit-background-clip:text;
-    -webkit-background-size:200% 100%;
-    background-size:200% 100%;
-    -webkit-animation:masked-animation 4s infinite linear;
-}
-@keyframes masked-animation {
-	0% {
-	background-position:0 0;
-}
-100% {
-	background-position:-100% 0;
-}
-}@-webkit-keyframes masked-animation {
-	0% {
-	background-position:0 0;
-}
-100% {
-	background-position:-100% 0;
-}
-}
-	
-.h1 {
-	font-size: 20px;
-	text-align: center; 
-	margin-left: 280px;
-}
+		a {
+			color: white;
+			text-decoration: none;
 
-	
-      </style>
-    </head>
+		}
 
-    
-<ul>
-	<li>
-		<a href="Katja/Katjaindex.html" target="_blank">Katja</a>
-	</li>
-    <li>
-		<a href="Wei/Weipage.html" target="_blank">Wei</a>
-	</li>
-    <li>
-        <a href="Victoria/Victoria/index.html" target="_blank">Victoria</a>
-	</li>
-    <li>
-        <a href="Hamza/Hamza/landing.html" target="_blank">Hamza</a>
-	</li>
-    <li>
-		<a href="Mudassar/Mudassar.html" target="_blank">Mudassar</a>
-	</li>
-</ul>
-</br>
-<div class="masked h1">
-<h1>Dream Courses Dream Group</h1>
-</div>
+		ul li:hover {
+			width: 380px;
+			height: 380px;
+			top: 40%;
+		}
+
+		ul li:nth-child(1) {
+			transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px) translateX(-50%) translateY(-50%);
+			background: salmon;
+			animation: flash1 1.3s ease forwards;
+		}
+
+		ul li:nth-child(2) {
+			transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px) translateX(-50%) translateY(-50%);
+			background: lightslategray;
+			animation: flash2 1.3s ease forwards;
+		}
+
+		ul li:nth-child(3) {
+			transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			background: darkseagreen;
+			animation: flash3 1.3s ease forwards;
+		}
+
+		ul li:nth-child(4) {
+			transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			background: lightsalmon;
+			animation: flash4 1.3s ease forwards;
+		}
+
+		ul li:nth-child(5) {
+			transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			background: lightseagreen;
+			animation: flash5 1.3s ease forwards;
+		}
+
+		@keyframes flash {
+			from {
+				transform: rotateX(-10deg) rotateY(0deg);
+			}
+
+			to {
+				transform: rotateX(-10deg) rotateY(360deg);
+			}
+		}
+
+		@keyframes flash1 {
+			from {
+				transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			}
+
+			to {
+				transform: translateX(-50%) translateY(-50%) rotateY(72deg) translateZ(400px);
+			}
+		}
+
+		@keyframes flash2 {
+			from {
+				transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			}
+
+			to {
+				transform: translateX(-50%) translateY(-50%) rotateY(144deg) translateZ(400px);
+			}
+		}
+
+		@keyframes flash3 {
+			from {
+				transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			}
+
+			to {
+				transform: translateX(-50%) translateY(-50%) rotateY(216deg) translateZ(400px);
+			}
+		}
+
+		@keyframes flash4 {
+			from {
+				transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			}
+
+			to {
+				transform: translateX(-50%) translateY(-50%) rotateY(288deg) translateZ(400px);
+			}
+		}
+
+		@keyframes flash5 {
+			from {
+				transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(400px);
+			}
+
+			to {
+				transform: translateX(-50%) translateY(-50%) rotateY(360deg) translateZ(400px);
+			}
+
+		}
+
+		.masked {
+			display: block;
+			width: 600px;
+			height: 900px;
+			background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%, #ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+			color: transparent;
+
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			-webkit-background-size: 200% 100%;
+			background-size: 200% 100%;
+			-webkit-animation: masked-animation 4s infinite linear;
+		}
+
+		@keyframes masked-animation {
+			0% {
+				background-position: 0 0;
+			}
+
+			100% {
+				background-position: -100% 0;
+			}
+		}
+
+		@-webkit-keyframes masked-animation {
+			0% {
+				background-position: 0 0;
+			}
+
+			100% {
+				background-position: -100% 0;
+			}
+		}
+
+		.h1 {
+			font-size: 20px;
+			text-align: center;
+			margin-left: 280px;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li>
+			<a href="Katja/Katjaindex.html" target="_blank">Katja</a>
+		</li>
+		<li>
+			<a href="Wei/Weipage.html" target="_blank">Wei</a>
+		</li>
+		<li>
+			<a href="Victoria/Victoria/index.html" target="_blank">Victoria</a>
+		</li>
+		<li>
+			<a href="Hamza/Hamza/landing.html" target="_blank">Hamza</a>
+		</li>
+		<li>
+			<a href="Mudassar/Mudassar.html" target="_blank">Mudassar</a>
+		</li>
+	</ul>
+	</br>
+	<div class="masked h1">
+		<h1>Dream Courses Dream Group</h1>
+	</div>
+</body>
 
 </html>
